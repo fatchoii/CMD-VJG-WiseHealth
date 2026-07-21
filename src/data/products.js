@@ -1,5 +1,8 @@
 import cmdBox from "../assets/images/CMD with box.png";
-
+import cbfBox from "../assets/images/cbf.png";
+import supremeJuiceBox from "../assets/images/supreme juice.png";
+import powerTrioBox from "../assets/images/power trio.png";
+ 
 export const products = [
   {
     id: 1,
@@ -25,21 +28,21 @@ export const products = [
   {
     id: 4,
     name: "Cell Bio Food",
-    image: cmdBox,
+    image: cbfBox,
     description: "Daily eye care support.",
     price: "Coming Soon",
   },
   {
     id: 5,
     name: "Supreme Juice",
-    image: cmdBox,
+    image: supremeJuiceBox,
     description: "Nutrient-rich food supplement.",
     price: "Coming Soon",
   },
   {
     id: 6,
     name: "Power Trio",
-    image: cmdBox,
+    image: powerTrioBox,
     description: "Healthy fruit-based wellness drink.",
     price: "Coming Soon",
   },
