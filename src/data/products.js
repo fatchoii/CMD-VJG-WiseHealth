@@ -2,6 +2,7 @@ import cmdBox from "../assets/images/CMD with box.png";
 import cbfBox from "../assets/images/cbf.png";
 import supremeJuiceBox from "../assets/images/supreme juice.png";
 import powerTrioBox from "../assets/images/power trio.png";
+import hciCoffeeBox from "../assets/images/hci mineral coffee.png";
  
 export const products = [
   {
@@ -21,7 +22,7 @@ export const products = [
   {
     id: 3,
     name: "Cell Mineral Drops 15ml",
-    image: cmdBox,
+    image: hciCoffeeBox,
     description: "Pocket-sized mineral support.",
     price: "Coming Soon",
   },
