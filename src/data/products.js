@@ -1,4 +1,4 @@
-import cmdBox from "../assets/images/CMD with box.png";
+import cmdBox from "../assets/images/cmd.png";
 import cbfBox from "../assets/images/cbf.png";
 import supremeJuiceBox from "../assets/images/supreme juice.png";
 import powerTrioBox from "../assets/images/power trio.png";

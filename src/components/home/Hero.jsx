@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import heroImage from "../../assets/images/CMD with box.png";
+import heroImage from "../../assets/images/cmd.png";
 
 export default function Hero() {
   return (
