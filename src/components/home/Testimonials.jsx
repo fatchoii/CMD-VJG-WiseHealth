@@ -1,31 +1,35 @@
-import { Star } from "lucide-react";
+import { testimonials } from "../../data/testimonials";
+import TestimonialCard from "../ui/TestimonialCard";
 
-export default function TestimonialCard({ testimonial }) {
+export default function Testimonials() {
   return (
-    <div className="rounded-2xl bg-white p-8 shadow-md transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-      <div className="mb-4 flex">
-        {[...Array(testimonial.rating)].map((_, index) => (
-          <Star
-            key={index}
-            size={20}
-            className="fill-yellow-400 text-yellow-400"
-          />
-        ))}
+    <section className="bg-white py-24">
+      <div className="mx-auto max-w-7xl px-6">
+
+        <div className="text-center">
+          <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700">
+            Testimonials
+          </span>
+
+          <h2 className="mt-5 text-4xl font-bold">
+            What Our Customers Say
+          </h2>
+
+          <p className="mx-auto mt-5 max-w-2xl text-gray-600">
+            We value every customer and strive to provide quality wellness products with excellent service.
+          </p>
+        </div>
+
+        <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {testimonials.map((testimonial) => (
+            <TestimonialCard
+              key={testimonial.id}
+              testimonial={testimonial}
+            />
+          ))}
+        </div>
+
       </div>
-
-      <p className="italic text-gray-600">
-        "{testimonial.comment}"
-      </p>
-
-      <div className="mt-6">
-        <h4 className="font-bold">
-          {testimonial.name}
-        </h4>
-
-        <p className="text-sm text-gray-500">
-          {testimonial.location}
-        </p>
-      </div>
-    </div>
+    </section>
   );
 }
